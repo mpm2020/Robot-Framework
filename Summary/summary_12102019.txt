@@ -1,0 +1,66 @@
+Que es git
+Git es un programa de control de versions el permite guardar diferentes de tu proyecto.
+Con git se puede versionar el proyecto localmente y tener una versión alterna en internet con cualquier pagina de repositorios(github o bitbucket)
+
+Puede tener una version identica de internet en tu computadora local.
+
+#Comandos:
+
+***Clone*** copia local del proyecto esta en internet
+***Branch rama de trabajo.Por defecto es la master
+git checkout -b nombre-del-branch
+Trabajar en una rama diferente de la principal
+***Commit*** 
+Porcion de codigo que deseas guardar.Te permite recuperar cambios innecesarios o no se ajusten.
+***Pull***(Pides o solicitas)
+Solicitar repositorio online todos los cambios a tu local
+***Push***(Mandas)
+Subir lo cambios del local al repositorio en linea
+
+1-Ir a google y colocar git y descargalo. No hay interfaz grafica trabajar desde la linea de comandos.
+
+2-Crear cuenta en bitbucket(subir paginas a un repositorio)
+Te crear permite repositorio privado sin tener que pagar, limite el numero de personas a tu personas a tu repositorio.
+Github tienes que pagar.Tiene versión de escritorio.
+3-Crear repositorio(publico) en gitbucket
+4-Clonar ese repositorio local, mover por la terminal
+5-Crear localmente con <git init>, se muestra un mensaje de que se ha creado.
+-->No tengo nada ni hice cambios
+6-Hacer <git status> para ver los archivos a subir en el repositorio(Color rojo)
+7-Hacer <git add .> para agregar los archivos al repositorio. El punto indica que se agregan todos los archivos.
+8-Hacer de nuevo <git status> para ver los archivos que fueron incluidos al repositorio(Color verde).Se agregan a la cola espera del commit
+9-Hacer <git commit -m "Primer Cambio al repositorio">. Todo se graba, es como un checkpoint
+10-Hacer <git status> . No hay nada por salvar
+11-Hacer <git push -u origin master>
+12- En bitbucket deberiamos ver el <primer commit> en commits
+13-Personalizar git
+git config --global user.name "Mariana"
+git config --global user.email "mariana.montenegro77@gmail.com"
+git config --list(Ver la configuracion)
+14-En bitbucket si vamos a search vemos todos los archivos
+15-En bitbucket si vamos dentro del repositorio vemos el principal branch(master)
+16-Queremos hacer otro caso de prueba. Entonces 
+Hacemos git checkout -b "NuevoCasoPrueba"
+17-Si hacemos git branch. Me muestra todos los que tengo creados hasta el momento. Y en verde el que recién cree(NuevoCasodePrueba).
+18-Voy al directorio creo un archivo.robot
+19-Hago un git status y me muestra el archivo en rojo.
+20-git add casodeprueba.robot
+21-git commit -m "Nuevo Caso" (Esta en el branch Caso de Prueba pero no es master)
+22-Para cambiarme a master pongo git checkout master y no veo el archivo.
+Puedo hacer cambios en los branches y sin afectar lo que esta subido.
+23-Si quiero la rama al repositorio online:
+git push origin nuevocasoprueba
+24- Verifico la rama en bitbucket.
+25- En equipo grande, luego hacemos un pull request(cambio en el master)
+Create pull request(puedo tener que loguearme)
+Title>> Nuevo Caso
+Descripcion>> Estoy incluyendo un nuevo a archivo robot
+Cuando se apruebe el pull request se borra el branch(y aparece en el verde lo nuevo, rojo lo borrado)
+26- Se hace un merge y se incorpora al master. 
+27- Si vas branches ya no esta.
+28- Me voy gitlab con <git checkout master>
+29- Voy a hacer un git pull origin master(para actualizar)
+30- Hacemos git branch y todavia vemos las dos ramas, como hacemos para borrar;simplemente
+git branch -D NuevoCasoPrueba
+
+

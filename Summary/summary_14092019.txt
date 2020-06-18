@@ -1,0 +1,60 @@
+**************************************
+Piramide Automation(Documento Adjunto Slack)
+**************************************
+
+*************
+Localizadores 
+*************
+Id
+id=email
+
+Selector CSS
+CSS=#email
+
+Xpath
+//*[@id="email"]
+
+
+
+A la hora de obtener los localizadores de los elementos que serán comprobados o usados en los scripts de pruebas se han usado las herramientas de desarrollador que incluye Google Chrome. Para ello basta con navegar a la página en cualquier navegador y pulsar la tecla F12.
+Esto mostrará las herramientas de desarrolladores donde encontramos una pestaña llamada <<Elementos>>
+, donde se puede inspeccionar el documento html de la página. 
+
+ID o css
+********
+Para aquellos casos donde se pueda usar el id, usaremos dicho selector, pero para aquellos donde no, se usará un selector css
+. Para obtener este basta con hacer click derecho en el elemento dentro del documento
+html (usando las herramientas de desarrollador) y seleccionar "copiar selector". De cara a usarlo en nuestr script solo será necesario añadir el prefijo css=
+
+******
+TAGS
+******
+Para clasificar los casos de pruebas.
+
+Tag a nivel de suite 
+
+Force Tags nameTag (Se coloca en el settings)
+
+Tag a nivel de Test
+
+[Tag] nameTag
+
+Para ejecutar en consola
+
+1) Incluir Test con determinada tag
+robot -i nameTag ./
+
+2) Excluir Test con determinada tag
+robot -e nameTag ./
+
+
+
+****************************************
+USER DEFINED KEYWORDS(ejercicio adjunto Test2)
+****************************************
+1)User Defined Keywords without arguments
+2)User Defined Keywords with arguments
+
+ 
+
+

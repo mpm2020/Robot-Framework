@@ -1,0 +1,51 @@
+Repaso General
+****************************
+Estructura del archivo robot
+****************************
+-Settings
+-Variables
+-Tests Cases
+-Keywords
+************************
+Tags
+************************
+-A Nivel de Suite
+Force Tags
+-A Nivel TestCase
+Tags
+
+Locators
+
+id
+name
+Css Selector
+Xpath
+
+Empleo en Google Chrome>> Css Selector>>Css Xpath
+********************
+Ejecución Test Cases
+********************
+//Simple test
+robot SuiteFile.robot
+//Tests con TAGS
+Include TAGS
+robot -i tagName SuiteFile.robot
+Exclude TAGS
+robot -e tagName SuiteFile.robot
+//Enviar el resultado a una carpeta "Results"
+robot -d results SuiteFile.robot
+*********************
+Uso de Setup/Teardown
+*********************
+Suite Setup se ejecuta antes de Suite
+Suite Teardown se ejecuta después de Suite
+Test Setup se ejecuta antes de cada Test Case
+Test TearDown se ejecuta después de cada Test Case
+**********************
+Nociones de Arquitectura
+**********************
+Proyecto Básico ROBOT
+---CARPETA KEYWORDS--> SUBCARPETAS -->LOCATORS(PO), COMMON
+---CARPETA RESULTS-->REPORTES
+---CARPETA TESTS--->SUITE DE TESTS
+

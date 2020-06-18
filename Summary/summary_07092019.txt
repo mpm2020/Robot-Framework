@@ -1,0 +1,69 @@
+RESUMEN:
+Clase 7/09/2019
+1) 
+Tipo de archivo que maneja el framework: *.robot
+2)
+Estructura de archivo en RobotFramework:
+
+***Settings***
+Seccion de librerias, recursos(contiene codigo reutilizable en otro archivo).
+Se recomienda en cada uno de nuestros test colocar una breve anotacióno o documentación de la suite a probar.
+
+***Variables***
+Seccion variables.
+Se recomienda emplear sintaxis CamelCase:es un estilo de escritura que se aplica a frases o palabras compuestas de mayúsculas y minúsculas. Por ejemplo para ${ejemploDeLowerCamelCase}
+
+***Keywords***
+Seccion "pasos" de un caso de prueba.
+
+
+***Test Cases***
+Seccion caso de prueba
+Se recomienda escribir el caso de prueba antes de automatizar y luego recurrir a la página https://robotframework.org/#libraries para buscar aquella libreria y keywords necesarias en nuestra automatización.
+
+Nota ->>para ejecutar un archivo.robot--> robot nombrearchivo.robot
+
+3) Probar la automatización con más de un browser.En nuestro caso con chrome o firefox.
+Se recomienda descargar el driver correspondiente y verificar la versión tanto de este como del navegador.
+
+4)Revisar Errores cuando pruebas fallan
+Se recomienda consultar los reportes generados por la tool.
+Report.html nos indica un resumen de los casos de pruebas(exitos/fallos).
+Log.html nos muestra la ejecución de cada uno de los pasos, con lo cual es posible identificar posibles fallas.
+Para consultar el log.html 
+//a través de command prompt o consola(escribir en ejecutar-->cmd),ir hasta la carpeta donde se encuentra nuestro test y escribir--> start log.html
+//a través de pycharm --> Posicionarse en el archivo log.html de la estructura de archivos-->Botón 
+de derecho del mouse -->Open in Browser--> Seleccionar navegador con el cual se desea visualizar el reporte
+
+5) Log To Console
+Se recomienda emplear para mostrar valor de una variable en consola.
+Por ejemplo: Log To Console  ${palabraABuscar}
+En nuestro test se debería visualizar en pantalla Winston Castillo 
+
+
+Ejercitación:
+1) Probar el ejercicio realizado en ambos navegadores: Firefox y Chromedriver(Tener en cuenta que 
+el driver debe estar actualizado y en la carpeta correspondiente).
+2) Automatizar el siguiente caso de prueba(tomando como base los otros casos):
+
+Abrir el navegador 
+Ingresar la palabra "caso de prueba" a buscar
+Hacer Click en buscar en google
+Ir al primer al primer resultado que me arroje la busqueda y hacer click(Ayuda: Investigar keyword
+Click Link)
+
+Saludos !
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,20 @@
+*****************************************************************
+Repaso Estructura Automation 
+Preguntas o dudas Frecuentes en cuanto a ejercicio de la clase anterior.
+---|Tarea Proxima clase 1210|
+Dividir en carpetas la estructura anterior
+*****************************************************************
+Repaso
+Run keyword if-[Condicional]
+Run Keyword and Ignore error(Nuevo)
+****************************
+Repaso
+Arguments with return(Nuevo)
+****************************
+Nuevas keywords
+
+Resize(Tamaño del browser)
+Position(Posicion del ventana)
+Remove(Eliminación de archivos)
+Capture Screenshot(Captura de imagenes durante la automatización)
+

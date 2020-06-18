@@ -1,0 +1,35 @@
+*********
+Repaso Estructura de Carpetas-Armado Ejercitación
+*********
+*********
+VARIABLES
+*********
+1)Variable escalar
+Las variables escalares serán reemplazadas por el valor que se les asigna. La sintaxis para la variable escalar es la siguiente:
+${variablename}
+
+2)Lista de variables
+La variable de lista tendrá una matriz de valores. Para obtener el valor, el elemento de la lista se pasa como argumento a la variable de la lista.
+
+Sintaxis
+@{variablename}
+
+Supongamos que tenemos los valores A, B. Para referir los valores, necesitamos pasar el elemento de la lista de la siguiente manera:
+
+@{variablename}[0] // A
+@{variablename}[1] // B
+
+2)Diccionario
+La variable de diccionario es similar a la variable de lista en la que pasamos el índice como argumento; sin embargo, en el caso de la variable del diccionario, podemos almacenar los detalles - forma de valor clave. 
+
+Sintaxis
+&{Variablename}
+
+Supongamos que estamos almacenando los valores como clave1 = A, clave2 = B. Se hará referencia en el caso de prueba como:
+&{Variablename}[key1] // A
+&{Variablename}[key2] // B
+
+****************************
+CONDICIONALES RUN KEYWORD IF
+****************************
+Validación Escenario- Uso de Condicional
